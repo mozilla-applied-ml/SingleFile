@@ -31,20 +31,20 @@ singlefile.extension.core.bg.config = (() => {
 	const REGEXP_RULE_PREFIX = "regexp:";
 
 	const DEFAULT_CONFIG = {
-		removeHiddenElements: true,
+		removeHiddenElements: false,
 		removeUnusedStyles: true,
 		removeUnusedFonts: true,
 		removeFrames: false,
-		removeImports: true,
+		removeImports: false,
 		removeScripts: true,
-		compressHTML: true,
+		compressHTML: false,
 		compressCSS: false,
 		loadDeferredImages: true,
 		loadDeferredImagesMaxIdleTime: 1500,
 		loadDeferredImagesBlockCookies: false,
 		loadDeferredImagesBlockStorage: false,
 		loadDeferredImagesKeepZoomLevel: false,
-		filenameTemplate: "{page-title} ({date-locale} {time-locale}).html",
+		filenameTemplate: "samples/{url-last-segment}.html",
 		infobarTemplate: "",
 		includeInfobar: false,
 		confirmInfobarContent: false,
@@ -83,7 +83,7 @@ singlefile.extension.core.bg.config = (() => {
 		saveToClipboard: false,
 		addProof: false,
 		saveToGDrive: false,
-		forceWebAuthFlow: false,
+		forceWebAuthFlow: true,
 		extractAuthCode: true,
 		resolveFragmentIdentifierURLs: false,
 		userScriptEnabled: false,
@@ -91,12 +91,13 @@ singlefile.extension.core.bg.config = (() => {
 		autoOpenEditor: false,
 		saveCreatedBookmarks: false,
 		ignoredBookmarkFolders: [],
-		replaceBookmarkURL: true,
+		replaceBookmarkURL: false,
 		saveFavicon: true,
 		includeBOM: false,
 		warnUnsavedPage: true,
 		autoSaveExternalSave: false,
-		insertMetaNoIndex: false
+		insertMetaNoIndex: false,
+		iframeSandbox: "allow-same-origin"
 	};
 
 	let configStorage;
