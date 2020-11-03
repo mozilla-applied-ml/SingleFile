@@ -109,6 +109,8 @@ this.singlefile.extension.core.content.main = this.singlefile.extension.core.con
 		let framesSessionId;
 		singlefile.lib.helper.initDoc(document);
 		ui.onStartPage(options);
+		options.tabWidth = window.innerWidth;
+		options.tabHeight = window.innerHeight;
 		processor = new singlefile.lib.SingleFile(options);
 		const preInitializationPromises = [];
 		options.insertSingleFileComment = true;
