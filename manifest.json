@@ -1,14 +1,14 @@
 {
 	"name": "SingleFile",
 	"author": "Gildas Lormeau",
-	"homepage_url": "https://github.com/gildas-lormeau/SingleFile",
+	"homepage_url": "https://github.com/mozilla-applied-ml/SingleFile",
 	"icons": {
 		"16": "extension/ui/resources/icon_16.png",
 		"48": "extension/ui/resources/icon_48.png",
 		"64": "extension/ui/resources/icon_64.png",
 		"128": "extension/ui/resources/icon_128.png"
 	},
-	"version": "1.18.25",
+	"version": "fta-1.0",
 	"description": "__MSG_extensionDescription__",
 	"content_scripts": [
 		{
