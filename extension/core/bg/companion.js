@@ -24,7 +24,7 @@
 /* global singlefile, browser */
 
 singlefile.extension.core.bg.companion = {
-	enabled: true,
+	enabled: false,
 	async onMessage(message) {
 		if (message.method.endsWith(".state")) {
 			return { enabled: this.enabled };
